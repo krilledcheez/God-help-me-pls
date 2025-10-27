@@ -16,8 +16,8 @@ set -euo pipefail
 
 # ---------- Colors ----------
 GREEN="\e[32m"; YELLOW="\e[33m"; CYAN="\e[36m"; RESET="\e[0m"
-say() { echo -e "${CYAN}→${RESET} $1"; }
-ok()  { echo -e "${GREEN}✓${RESET} $1"; }
+say() { echo -e "${CYAN} ${RESET} $1"; }
+ok()  { echo -e "${GREEN} ${RESET} $1"; }
 
 # ---------- Safety ----------
 if [[ $EUID -eq 0 ]]; then
@@ -94,5 +94,5 @@ printf "%-10s %s\n" "Brew:" "$(brew --version 2>/dev/null | head -n 1 || echo 'n
 echo -e "${YELLOW}──────────────────────────────${RESET}"
 ok "Verification complete."
 
-echo -e "\n${GREEN}✅ Setup complete!${RESET}"
+echo -e "\n${GREEN} Setup complete!${RESET}"
 echo -e "Restart your terminal or run: ${YELLOW}source ~/.bashrc${RESET}"
