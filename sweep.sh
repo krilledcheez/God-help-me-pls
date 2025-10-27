@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # ==========================================================
 # Fedora Web Developer Setup Script
-# Author: <your name>
+# Author: krilledxheez
 # Version: 2.2
 # ==========================================================
 # PURPOSE:
